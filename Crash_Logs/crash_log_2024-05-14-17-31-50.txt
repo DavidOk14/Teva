@@ -1,0 +1,3 @@
+The platform attempting to execute the application is not currently supported
+Exiting application
+NoneType: None

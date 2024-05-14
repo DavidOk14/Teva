@@ -1,3 +1,3 @@
 class InitAndroid:
     def __init__(self):
-        #Do Something
+        print("Operating Teva on Android")

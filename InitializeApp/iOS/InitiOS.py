@@ -1,3 +1,3 @@
 class InitiOS:
     def __init__(self):
-        #Do Something
+        print("Operating Teva on iOS")
