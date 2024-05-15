@@ -1,0 +1,2 @@
+[RESIZING] An error occurred: 'int' object is not subscriptable
+Exiting application

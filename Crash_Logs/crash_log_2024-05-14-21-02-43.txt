@@ -1,0 +1,2 @@
+[RESIZING] An error occurred: argument 2: <class 'TypeError'>: expected LP_RECT instance instead of pointer to RECT
+Exiting application
