@@ -1,0 +1,2 @@
+[LOGIN] An error occurred: [Errno 2] No such file or directory: 'Content/Login/lodgin.kv'
+Exiting application

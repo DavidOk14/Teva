@@ -1,0 +1,10 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 42:
+...
+     40:
+     41:BoxLayout:
+>>   42:        orientation: 'horizontal'
+     43:        height: "30dp"
+     44:        spacing: "25dp"
+...
+Invalid indentation
+Exiting application

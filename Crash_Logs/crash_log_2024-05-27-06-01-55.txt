@@ -1,0 +1,10 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 39:
+...
+     37:            fill_color_normal: 1, 1, 1, .2
+     38:            hint_text: "Password"
+>>   39:            Password: True
+     40:            icon_right: 'eye-off'
+     41:            font_size: 20
+...
+Invalid data after declaration
+Exiting application

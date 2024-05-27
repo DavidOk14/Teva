@@ -1,0 +1,10 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 47:
+...
+     45:
+     46:            MDButtonText:
+>>   47:                text "Test1"
+     48:        MDButton:
+     49:            style: "tonal"
+...
+Invalid property name
+Exiting application

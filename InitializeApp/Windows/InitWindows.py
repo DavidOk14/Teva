@@ -3,6 +3,9 @@ import win32gui
 from Handling import ErrorHandling
 
 class InitWindows:
+    Window_Width = 540
+    Window_Height = 960
+
     def __init__(self):
         print("Operating Teva on Windows") #TODO: Log This as [OPERATING SYSTEM]
 

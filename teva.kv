@@ -6,9 +6,10 @@
             pos: self.pos
             size: self.size
 
-    # Add a label that prints the text "hey"
     Label:
         text: "Teva (Build 5.14.24)"
-        font_size: 32
+        font_size: root.font_size  # Bind the font size to the dynamic property
         color: 1, 1, 1, 1
-        pos_hint: {'x': -0.3225, 'top': 1.45}
+        size_hint: None, None
+        size: self.texture_size
+        pos_hint: {'center_x': 0.5, 'center_y': 0.95}

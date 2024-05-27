@@ -1,0 +1,2 @@
+[LOGIN] An error occurred: invalid syntax (login.kv, line 32)
+Exiting application
