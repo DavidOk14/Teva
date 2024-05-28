@@ -1,13 +1,18 @@
 import win32api
 import win32gui
+import platform
 from Handling import ErrorHandling
+from Handling import LoggingInfo
 
 class InitWindows:
     Window_Width = 540
     Window_Height = 960
 
     def __init__(self):
-        print("Operating Teva on Windows") #TODO: Log This as [OPERATING SYSTEM]
+        self._log = LoggingInfo.LoggingInfo()
+        self._log.CreateLogFolder()
+        print(f"[OPERATING SYSTEM] Operating Teva on {platform.system()}")
+        self._log.AppendToLog(f"[OPERATING SYSTEM] Operating Teva on {platform.system()}")
 
     def resize_and_center_window(self, window_name, width, height):
         try:
@@ -23,11 +28,16 @@ class InitWindows:
             screen_width = win32api.GetSystemMetrics(0)
             screen_height = win32api.GetSystemMetrics(1)
 
+
             x = (screen_width - width) // 2
             y = (screen_height - height) // 2
 
             # Move the window to the center and resize
             win32gui.MoveWindow(teva_window, x, y, width, height, True)
+            print(f"[RESIZING] Resizing Window to {width} x {height} ({width-18} x  {height-48})")
+            self._log.AppendToLog(f"[RESIZING] Resizing Window to {width} x {height} ({width-18} x  {height-48})")
+            print(f"[CENTERING] Centering Window to {x} , {y} ({screen_width} x {screen_height} - Display Size)")
+            self._log.AppendToLog(f"[CENTERING] Centering Window to {x} , {y} ({screen_width} x {screen_height} - Display Size)")
 
         except Exception as e:
             print(f"[RESIZING] An error occurred: {e}")

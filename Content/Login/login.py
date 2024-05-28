@@ -12,11 +12,4 @@ except Exception as e:
     ErrorHandling.ErrorHandling.LogAndExit(f"[LOGIN] An error occurred: {e}")
 
 class LoginScreen(Screen):
-    def toggle_password_checkbox(self, checkbox):
-        if checkbox.active:
-            # Checkbox is checked, show password
-            self.ids.password_field.password = False
-        else:
-            # Checkbox is unchecked, hide password
-            self.ids.password_field.password = True
     pass

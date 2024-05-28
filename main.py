@@ -6,7 +6,7 @@
 import kivy
 from kivymd.app import MDApp
 from kivy.utils import platform
-from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.screenmanager import ScreenManager
 
 # Operating System Setup Based Imports
 from InitializeApp.Android.InitAndroid import InitAndroid
@@ -52,30 +52,20 @@ elif platform == 'unknown':
 
     ErrorHandling.ErrorHandling.LogAndExit("The platform attempting to execute the application is not currently supported")
 
-    # def __init__(self, **kwargs):
-    #     super(MyLayout, self).__init__(**kwargs)
-    #     Window.bind(on_resize=self.update_font_size)
-    #     self.update_font_size(Window.width, Window.height)
-    #
-    # def update_font_size(self, width, height):
-    #     # Calculate scaling factors
-    #     width_scale = width / INITIAL_WIDTH
-    #     height_scale = height / INITIAL_HEIGHT
-    #     scale = min(width_scale, height_scale)
-    #
-    #     # Calculate new font size
-    #     self.font_size = BASELINE_FONT_SIZE * scale
-
-
 class Teva(MDApp):
     def build(self):
-        # Create The ScreenManager -- add Login Screen to the SM
-        sm = ScreenManager()
+        # Create The ScreenManager -- add all needed screens (Error Handle)
+        try:
+            sm = ScreenManager()
 
-        sm.add_widget(LoginScreen(name='login'))
-        sm.current = 'login'
-        self.title = Window_Title
-        return sm
+            sm.add_widget(LoginScreen(name='login'))
+            sm.current = 'login'
+            self.title = Window_Title
+            return sm
+        except Exception as e:
+            print(f"[SCREEN MANAGER SETUP] An error occurred: {e}")
+            ErrorHandling.ErrorHandling.LogAndExit(f"[SCREEN MANAGER SETUP] An error occurred: {e}")
+
     def on_start(self):
         # Call the resize function here
             init.resize_and_center_window(Window_Title, init.Window_Width, init.Window_Height)

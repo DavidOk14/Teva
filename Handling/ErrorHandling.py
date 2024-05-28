@@ -1,6 +1,5 @@
 # Error Handling Imports
 import os.path
-import traceback
 from datetime import datetime
 import sys
 
