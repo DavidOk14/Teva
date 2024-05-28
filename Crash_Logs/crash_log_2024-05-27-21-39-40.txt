@@ -1,0 +1,8 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 86:
+...
+     84:                    on_touch_down:
+     85:                        if self.collide_point(*args[1].pos):  # Check if touch event is inside the label
+>>   86:                            show_password_checkbox.active = not show_password_checkbox.active  # Toggle checkbox state
+...
+Invalid indentation (too many levels)
+Exiting application

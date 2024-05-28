@@ -1,0 +1,9 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 84:
+...
+     82:                    size_hint: 1, None
+     83:                    height: "30dp"
+>>   84:                        on_touch_down:
+     85:                            show_password_checkbox.active = not show_password_checkbox.active  # Toggle checkbox state
+...
+Invalid indentation
+Exiting application

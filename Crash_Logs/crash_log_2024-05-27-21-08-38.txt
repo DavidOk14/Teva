@@ -1,0 +1,10 @@
+[LOGIN] An error occurred: Parser: File "C:\Users\Realc14\Documents\Git\Teva\Content\Login\login.kv", line 64:
+...
+     62:                    text_color: 1, 1, 1, 1  # Text color
+     63:
+>>   64:            size_hint: .85, None
+     65:            height: "30dp"
+     66:            pos_hint: {'center_x':.51, 'center_y':.3}
+...
+Invalid data after declaration
+Exiting application
