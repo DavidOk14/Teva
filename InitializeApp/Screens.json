@@ -1,4 +1,12 @@
-
-
-LoginPage: login
-SignUpPage: signup
+{
+  "Screens": [
+    {
+      "Screen_Class": "Content.Login.login.LoginScreen",
+      "Screen_Name": "login"
+    },
+    {
+      "Screen_Class": "Content.Login.signup.SignUpScreen",
+      "Screen_Name": "signup"
+    }
+  ]
+}
